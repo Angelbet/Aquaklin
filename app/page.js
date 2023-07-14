@@ -77,7 +77,8 @@ export default function Home() {
 
           </div> */}
           <Link
-            href="/"
+            href="https://www.instagram.com/aquaklin.ve/"
+            target="_blank"
             className={`${style.lightbox_link} ${style.w_inline_block} ${style.w_lightbox}`}
           >
             <Image
@@ -91,9 +92,7 @@ export default function Home() {
             <div className={style.play_content}>
 
               <div
-                target="_blank"
                 className={`${style.circle_link_block} ${style.w_inline_block}`}
-                href="https://www.instagram.com/aquaklin.ve/"
               >
                 <img
                   alt=""
