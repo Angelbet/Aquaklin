@@ -219,7 +219,7 @@
 }
 
 // Video
-.video{
+.video {
     position: absolute;
     left: auto;
     top: auto;
@@ -230,11 +230,13 @@
     background-color: #808180;
     transform: translateY(8.4em);
 }
+
 .background_video {
     position: relative;
     overflow: hidden;
     height: 500px;
 }
+
 .video_section {
     position: absolute;
     left: 0;
@@ -245,6 +247,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .background_video>video {
     background-size: cover;
     background-position: 50% 50%;
@@ -270,9 +273,119 @@
     background-color: #1d252c;
     transition: .2s;
 }
+
 .social_media_icon {
     padding: 17px;
 }
+
 .circle_link_block:hover {
     background-color: #5c6267;
+}
+
+
+@media screen and (max-width: 991px) {
+    .template_logo {
+        left: 20px;
+        top: 30px;
+    }
+
+    .hero {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 80px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .max_w_hero {
+        max-width: 600px;
+    }
+
+    .title_1 {
+        font-size: 70px;
+        line-height: 1.1;
+    }
+
+    .hero_photo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 600px;
+        margin-top: 60px;
+    }
+
+    .lightbox_link {
+        left: 44px;
+        bottom: -58px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .template_logo {
+        left: 25px;
+        top: 25px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .hero {
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    .max_w_hero {
+        max-width: 90%;
+    }
+
+    .hero_photo {
+        height: 450px;
+        margin-top: 40px;
+        background-position: 50% 0%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .template_logo {
+        left: 15px;
+        top: 15px;
+        width: 70px;
+        height: 70px;
+        outline-color: #fff;
+        outline-offset: 5px;
+        outline-style: none;
+        outline-width: 2px;
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .max_w_hero {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .title_1 {
+        font-size: 45px;
+    }
+
+    .image_span {
+        height: 85px;
+        min-width: 220px;
+    }
+
+    .hero_photo {
+        height: 270px;
+    }
 }
