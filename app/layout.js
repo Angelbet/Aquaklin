@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Aquiaklin Online | Próximamente',
-  description: 'Página en constrrucción Aquaklin',
+  description: 'Página en construcción Aquaklin',
 }
 
 export default function RootLayout({ children }) {
