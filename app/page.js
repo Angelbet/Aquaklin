@@ -21,7 +21,7 @@ import { gsap } from 'gsap'
 import { Linear } from 'gsap'
 
 // Components
-import Effect_1 from './Components/effect_1'
+import Effect_1 from './Components/Effect_1'
 import Preloader from './Preloader'
 
 
