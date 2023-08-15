@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { createRef, useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -42,6 +42,7 @@ import Footer from '../app/Components/footer'
 
 // Fonts
 import { Raleway } from 'next/font/google'
+import Link from 'next/link'
 const raleway = Raleway({
     weight: '600',
     subsets: ['latin'],
@@ -58,10 +59,10 @@ const raleway_3 = Raleway({
     display: 'swap',
 })
 
-function home() {
+function Home() {
 
-    const textRef = useRef(null);
-    const absoluteTextRef = useRef(null);
+    const textRef = createRef(null);
+    const absoluteTextRef = createRef(null);
 
     // Función que se ejecuta cuando se produce el evento mouseover sobre el botón
     const handleMouseOver = () => {
@@ -115,7 +116,7 @@ function home() {
     // ===========================================================
 
     // Desplazamiento horizontal Infinito
-    const movingSubtextRef1 = useRef(null);
+    const movingSubtextRef1 = createRef(null);
     // const movingSubtextRef2 = useRef(null);
 
     useEffect(() => {
@@ -193,7 +194,7 @@ function home() {
 
 
     // Seccion Horizontal Scroll
-    const containerRef = useRef(null);
+    const containerRef = createRef(null);
     useEffect(() => {
         // const timeline = gsap.timeline({
         //     ease: "none",
@@ -337,8 +338,8 @@ function home() {
 
 
 
-    const marqueeRef = useRef(null);
-    const marqueelef = useRef(null);
+    const marqueeRef = createRef(null);
+    const marqueelef = createRef(null);
 
     useEffect(() => {
         gsap.to(marqueeRef.current, {
@@ -705,7 +706,7 @@ function home() {
                                         width={150}
                                     />
                                 </div>
-                                <a
+                                <Link
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edd-3dc2eb3e"]}
                                     href='/product'
                                     className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_1}`}
@@ -715,7 +716,7 @@ function home() {
                                         alt="Ferralca"
                                         width={80}
                                     />
-                                </a>
+                                </Link>
                                 <div
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edf-3dc2eb3e"]}
                                     className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_5}`}
@@ -804,7 +805,7 @@ function home() {
 
                             </div>
                             <div className={`${style.w_layout_grid} ${style.corroussel_grid} value-container`}>
-                                <a
+                                <Link
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edd-3dc2eb3e"]}
                                     href='/product'
                                     className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_1}`}
@@ -814,7 +815,7 @@ function home() {
                                         alt="Ferralca"
                                         width={80}
                                     />
-                                </a>
+                                </Link>
                                 <div
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edf-3dc2eb3e"]}
                                     className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_5}`}
@@ -1717,7 +1718,7 @@ function home() {
     )
 }
 
-export default home
+export default Home
 
 
 

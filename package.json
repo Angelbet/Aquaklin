@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.16",
     "gsap": "^3.12.2",
-    "next": "13.4.12",
+    "next": "13.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.64.2"

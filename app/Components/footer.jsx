@@ -1,4 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+"use client";
+
+import React, { createRef, useEffect, useRef } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -25,18 +27,18 @@ const raleway_2 = Raleway({
     display: 'swap',
 })
 
-export default function footer() {
+const Footer = () => {
 
     // Desplazamiento horizontal Infinito
-    const movingSubtextRef1 = useRef();
-    const movingSubtextRef2 = useRef();
+    const MovingSubtextRef1 = createRef(null);
+    const MovingSubtextRef2 = createRef(null);
 
     useEffect(() => {
-        const movingSubtext1 = movingSubtextRef1.current;
-        const movingSubtext2 = movingSubtextRef2.current;
+        const MovingSubtext1 = MovingSubtextRef1.current;
+        const MovingSubtext2 = MovingSubtextRef2.current;
 
         // Creamos una animación para mover los dos elementos hacia la izquierda
-        const tl = gsap.to([movingSubtext1, movingSubtext2], {
+        const tl = gsap.to([MovingSubtext1, MovingSubtext2], {
             duration: 12,
             x: '-100%',
             ease: 'none',
@@ -49,7 +51,7 @@ export default function footer() {
 
     // ===========================================================
 
-    const lineRef = useRef();
+    const lineRef = React.createRef(null);
 
     const handleHoverIn = () => {
         gsap.to(lineRef.current, {
@@ -75,9 +77,9 @@ export default function footer() {
                         <div className={style.footer_component}>
                             <div className={style.footer_top}>
                                 <div className={style.moving_subtext_wrap}>
-                                    <div ref={movingSubtextRef1} className={`${style.moving_subtext} ${raleway.className}`}>
+                                    <div ref={MovingSubtextRef1} className={`${style.moving_subtext} ${raleway.className}`}>
                                         contenido contenido contenido contenido contenido contenido
-                                        contenido&nbsp;-</div><div ref={movingSubtextRef2} className={`${style.moving_subtext} ${raleway.className}`}>contenido contenido contenido contenido contenido contenido
+                                        contenido&nbsp;-</div><div ref={MovingSubtextRef2} className={`${style.moving_subtext} ${raleway.className}`}>contenido contenido contenido contenido contenido contenido
                                             contenido&nbsp;-&nbsp;
                                     </div>
                                 </div>
@@ -195,3 +197,5 @@ export default function footer() {
         </footer>
     )
 }
+
+export default Footer;
