@@ -28,8 +28,8 @@ const raleway_2 = Raleway({
 export default function footer() {
 
     // Desplazamiento horizontal Infinito
-    const movingSubtextRef1 = useRef(null);
-    const movingSubtextRef2 = useRef(null);
+    const movingSubtextRef1 = useRef();
+    const movingSubtextRef2 = useRef();
 
     useEffect(() => {
         const movingSubtext1 = movingSubtextRef1.current;
@@ -49,7 +49,7 @@ export default function footer() {
 
     // ===========================================================
 
-    const lineRef = useRef(null);
+    const lineRef = useRef();
 
     const handleHoverIn = () => {
         gsap.to(lineRef.current, {
