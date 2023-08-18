@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 // Styles
 import style from '../styles/Home.module.scss'
-import '../app/globals.css'
 
 // Images
 import home_1 from '../public/assets/Home/home_1.jpg'
@@ -37,8 +36,8 @@ import { gsap, Power2 } from 'gsap'
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // Components
-import Navbar from '../app/Components/navbar'
-import Footer from '../app/Components/footer'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 // Fonts
 import { Raleway } from 'next/font/google'
@@ -365,7 +364,6 @@ function Home() {
             <Head>
                 <title>Aquaklin</title>
                 <meta name="description" content="Aquaklin Online" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
 

@@ -8,11 +8,10 @@ import Link from 'next/link';
 import { gsap } from 'gsap'
 
 // Styles
-import style from '../../styles/Footer.module.scss'
-import '../../app/globals.css'
+import style from '../styles/Footer.module.scss'
 
 // Images
-import logo_white from '../../public/assets/l0go_white.png'
+import logo_white from '../public/assets/l0go_white.png'
 
 // Fonts
 import { Raleway } from 'next/font/google'
@@ -83,7 +82,7 @@ const Footer = () => {
                                             contenido&nbsp;-&nbsp;
                                     </div>
                                 </div>
-                                    <a
+                                    <Link
                                         href="/"
                                         className={`${style.footer_contact_link} ${style.w_inline_block}`}
                                         onMouseEnter={handleHoverIn}
@@ -91,80 +90,80 @@ const Footer = () => {
                                     >
                                         <div className={raleway_2.className}>Contacto</div>
                                         <div className={style.footer_contact_link_line} ref={lineRef} />
-                                    </a>
+                                    </Link>
                             </div>
                             <div className={`${style.footer_main}`}>
                                 <div className={`${style.footer_logo_text_wrap} ${raleway.className}`}>
-                                    <a href="/" className={`${style.footer_logo} ${style.w_inline_block}`}>
+                                    <Link href="/" className={`${style.footer_logo} ${style.w_inline_block}`}>
                                         <Image
                                             src={logo_white}
                                             className={style.logo_w}
                                             alt="logo white"
                                         />
-                                    </a>
+                                    </Link>
                                     <div>Contenido contenido contenido contenido contenido</div>
                                 </div>
                                 <div className={`${style.footer_links_wrap} ${raleway_2.className}`}>
                                     <div className={style.footer_link_column}>
-                                        <a href="/" className={style.footer_link}>
+                                        <Link href="/home" className={style.footer_link}>
                                             Inicio
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="/"
                                             className={style.footer_link}
                                         >
                                             Nosotros
-                                        </a>
-                                        <a href="/work" className={style.footer_link}>
+                                        </Link>
+                                        <Link href="/products" className={style.footer_link}>
                                             Productos
-                                        </a>
-                                        <a href="/blog" className={style.footer_link}>
+                                        </Link>
+                                        <Link href="/blog" className={style.footer_link}>
                                             Contacto
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className={style.footer_link_column}>
-                                        <a
+                                        <Link
                                             href="https://twitter.com/"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
                                             instagram
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="https://www.instagram.com/"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
                                             Email
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="https://dribbble.com/"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
                                             Facebook
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="https://www.behance.net/"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
 
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className={style.footer_link_column}>
-                                        <a href="/" className={style.footer_link}>
+                                        <Link href="/" className={style.footer_link}>
                                             Producto
-                                        </a>
-                                        <a href="/" className={style.footer_link}>
+                                        </Link>
+                                        <Link href="/" className={style.footer_link}>
                                             Producto
-                                        </a>
-                                        <a href="/" className={style.footer_link}>
+                                        </Link>
+                                        <Link href="/" className={style.footer_link}>
                                             Producto
-                                        </a>
-                                        <a href="/" className={style.footer_link}>
+                                        </Link>
+                                        <Link href="/" className={style.footer_link}>
                                             Producto
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

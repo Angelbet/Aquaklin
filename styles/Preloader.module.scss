@@ -150,3 +150,41 @@
     line-height: 108%;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 991px) {
+    .loader_circle {
+        width: 140vh;
+        height: 140vh;
+    }
+
+    .footer_triangle {
+        left: 70.5vw;
+        width: 25.5vw;
+    }
+
+    .footer_logo_text {
+        font-size: 18vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .loader_circle {
+        width: 140vw;
+        height: 140vw;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .footer_triangle {
+        width: 20.5vw;
+    }
+
+    .footer_logo_text {
+        font-size: 17vw;
+    }
+
+    .loader_circle {
+        width: 140vh;
+        height: 140vh;
+    }
+}

@@ -6,10 +6,10 @@ import { gsap } from 'gsap';
 import { Linear } from 'gsap';
 
 // Styles
-import style from '../../styles/UnderConstruction.module.scss'
+import style from '../styles/UnderConstruction.module.scss'
 
 // Images
-import effect_1 from '../../public/assets/effect_1.png';
+import effect_1 from '../public/assets/effect_1.png';
 
 export default function Effect_1() {
 

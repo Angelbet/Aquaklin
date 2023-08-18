@@ -1,13 +1,10 @@
-"use client";
-
 import React from 'react'
 
 // Styles
-import style from '../../styles/Navbar.module.scss'
-import '../../app/globals.css'
+import style from '../styles/Navbar.module.scss'
 
 // Images
-import logo from '../../public/assets/l0go.png'
+import logo from '../public/assets/l0go.png'
 
 // Icons
 import { UilAirplay } from '@iconscout/react-unicons'
@@ -35,7 +32,7 @@ export default function navbar() {
                 className={`${style.navigation_mbl} ${style.w_nav}`}
             >
                 <div className={`${style.container} ${style.mbl_nav} ${style.w_container}`}>
-                    <Link href="#" className={style.w_nav_brand}>
+                    <Link href="/home" className={style.w_nav_brand}>
                         <Image
                             src={logo}
 
@@ -50,7 +47,8 @@ export default function navbar() {
                                         <div
                                             className={`${style.dropdown_mbl} ${style.w_dropdown}`}
                                         >
-                                            <div
+                                            <Link
+                                                href="/products"
                                                 className={`${style.nav_link_mbl} ${style.w_dropdown_toggle}`}
                                                 id="w-dropdown-toggle-0"
                                             >
@@ -58,7 +56,7 @@ export default function navbar() {
                                                     className={`${style.icon} ${style.w_icon_dropdown_toggle}`}
                                                 />
                                                 <div>Home</div>
-                                            </div>
+                                            </Link>
                                         </div>
                                     </li>
                                     <li className={style.nav_list_item}>
@@ -148,7 +146,7 @@ export default function navbar() {
                         className={`${style.menu_button} ${style.w_nav_button}`}
                         style={{ WebkitUserSelect: "text" }}
                     >
-                        <UilApps with={20} height={20}/>
+                        <UilApps with={20} height={20} />
                     </div>
                 </div>
                 <div

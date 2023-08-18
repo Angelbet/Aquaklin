@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
 // Styles
 import style from '../styles/UnderConstruction.module.scss'
@@ -21,8 +22,9 @@ import { gsap } from 'gsap'
 import { Linear } from 'gsap'
 
 // Components
-import Effect_1 from './Components/Effect_1'
-import Preloader from './Preloader'
+import Effect_1 from '../components/Effect_1'
+import Preloader from '../components/Preloader'
+
 
 
 export default function Home() {
@@ -30,11 +32,16 @@ export default function Home() {
 
 
   return (
-    <Preloader>
+    <>
+      <Head>
+        <title>Aquiaklin Online | Próximamente</title>
+        <meta name="description" content="Página en construcción Aquaklin" />
+      </Head>
+
       <main id={style['UnderConstruction']} className={style.body_content}>
 
         {/* Logo */}
-        <a
+        <Link
           href="/"
           className={`${style.template_logo} ${style.w_inline_block}`}
         >
@@ -44,7 +51,7 @@ export default function Home() {
             alt="Aquaklin Logo"
             className={style.zork_logo}
           />
-        </a>
+        </Link>
 
         <div className={style.hero}>
           <div
@@ -130,7 +137,7 @@ export default function Home() {
 
       </main>
 
-    </Preloader>
+    </>
 
   )
 }

@@ -4,11 +4,10 @@ import Image from 'next/image'
 
 // Styles
 import style from '../styles/Product.module.scss'
-import '../app/globals.css'
 
 // Components
-import Navbar from '../app/Components/navbar'
-import Footer from '../app/Components/footer'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 // Images
 import about2 from '../public/assets/Home/about2.jpg'
