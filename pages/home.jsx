@@ -11,6 +11,9 @@ import product_1 from '../public/assets/Home/Products/product_1.jpg'
 import logo_white from '../public/assets/l0go_white.png'
 
 import p1 from '../public/assets/Home/Products/p1.jpg'
+import p2 from '../public/assets/Home/Products/p2.jpg'
+import p3 from '../public/assets/Home/Products/p3.jpg'
+
 
 import about_3 from '../public/assets/Home/about_3.jpg'
 import about_4 from '../public/assets/Home/about_4.jpg'
@@ -21,7 +24,6 @@ import about2 from '../public/assets/Home/about2.jpg'
 
 // Brand
 import brand_1 from '../public/assets/Home/Brand/Aganova.png'
-import brand_2 from '../public/assets/Home/Brand/AmpacUSA.png'
 import brand_3 from '../public/assets/Home/Brand/DaQua.webp'
 import brand_4 from '../public/assets/Home/Brand/Ferralca.png'
 import brand_5 from '../public/assets/Home/Brand/H2oGO2.png'
@@ -375,7 +377,7 @@ function Home() {
 
                 {/* Social Mobile */}
                 <div className={style.mobile_socials}>
-                    <a href="mailto:Hello@example.com" className={`${style.mobile_socials_email_link} ${raleway.className}`}>
+                    <a href="mailto:serviciosaquaklin@gmail.com" className={`${style.mobile_socials_email_link} ${raleway.className}`}>
                         Email
                     </a>
                     <a
@@ -513,11 +515,11 @@ function Home() {
 
                                     <div className={style.photo_address_socials}>
                                         <a
-                                            href="mailto:Hello@example.com"
+                                            href="mailto:serviciosaquaklin@gmail.com"
                                             target="_blank"
                                             className={`${style.email_info} ${raleway.className}`}
                                         >
-                                            Hello@example.com
+                                            serviciosaquaklin@gmail.com
                                         </a>
                                         <div className={style.about_image_wrapper}>
                                             <Image
@@ -685,16 +687,6 @@ function Home() {
                                     />
                                 </div>
                                 <div
-                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765ed9-3dc2eb3e"]}
-                                    className={style.brand_wrapper}
-                                >
-                                    <Image
-                                        src={brand_2}
-                                        alt="AmpacUSA"
-                                        width={120}
-                                    />
-                                </div>
-                                <div
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edb-3dc2eb3e"]}
                                     className={style.brand_wrapper}
                                 >
@@ -734,6 +726,17 @@ function Home() {
                                         src={brand_6}
                                         alt="Primusline"
                                         width={170}
+                                    />
+                                </div>
+                                <div
+                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765ed7-3dc2eb3e"]}
+                                    className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_4}`}
+                                >
+                                    <Image
+                                        src={brand_1}
+                                        alt="Aganova"
+                                        className={style.image_16}
+                                        width={100}
                                     />
                                 </div>
                             </div>
@@ -759,16 +762,17 @@ function Home() {
                                         width={150}
                                     />
                                 </div>
-                                <div
-                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765ee1-3dc2eb3e"]}
-                                    className={style.brand_wrapper}
+                                <Link
+                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edd-3dc2eb3e"]}
+                                    href='/product'
+                                    className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_1}`}
                                 >
                                     <Image
-                                        src={brand_9}
-                                        alt="Watertec"
+                                        src={brand_4}
+                                        alt="Ferralca"
                                         width={80}
                                     />
-                                </div>
+                                </Link>
                                 <div
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765ed7-3dc2eb3e"]}
                                     className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_4}`}
@@ -780,16 +784,17 @@ function Home() {
                                         width={100}
                                     />
                                 </div>
-                                <div
-                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765ed9-3dc2eb3e"]}
-                                    className={style.brand_wrapper}
+                                <Link
+                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edd-3dc2eb3e"]}
+                                    href='/product'
+                                    className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_1}`}
                                 >
                                     <Image
-                                        src={brand_2}
-                                        alt="AmpacUSA"
-                                        width={120}
+                                        src={brand_4}
+                                        alt="Ferralca"
+                                        width={80}
                                     />
-                                </div>
+                                </Link>
                                 <div
                                     id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edb-3dc2eb3e"]}
                                     className={style.brand_wrapper}
@@ -855,16 +860,17 @@ function Home() {
                                         width={150}
                                     />
                                 </div>
-                                <div
-                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765ee1-3dc2eb3e"]}
-                                    className={style.brand_wrapper}
+                                <Link
+                                    id={style["w-node-d030d8e1-a4ec-df11-873a-babc3c765edd-3dc2eb3e"]}
+                                    href='/product'
+                                    className={`${style.brand} ${style.brand_wrapper} ${style.brand_focus} ${style.brand_1}`}
                                 >
                                     <Image
-                                        src={brand_9}
-                                        alt="Watertec"
+                                        src={brand_4}
+                                        alt="Ferralca"
                                         width={80}
                                     />
-                                </div>
+                                </Link>
                             </div>
 
 
@@ -946,7 +952,7 @@ function Home() {
                                                         <div className={`${style.project_type} ${raleway_2.className}`}>Clarificador de Agua</div>
                                                         <div className={`${style.big_text} ${raleway_3.className}`}>Sulfato de Aluminio</div>
                                                         <div className={style.secondary_button_wrapper}>
-                                                            <a href="#"
+                                                            <Link href="/products/aluminum-sulfate"
                                                                 onMouseOver={handleMouseOver}
                                                                 onMouseOut={handleMouseOut}
                                                                 className={`${style.secondary_button_wrapper} ${style.button_s1} ${style.secondary} ${style.w_inline_block}`}
@@ -959,7 +965,7 @@ function Home() {
                                                                         Ver
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -971,14 +977,14 @@ function Home() {
                                                         <div className={`${style.project_image_wrapper}`}>
                                                             <Image
                                                                 alt="Producto 1"
-                                                                src={product_1}
+                                                                src={p2}
                                                                 className={style.project_image}
                                                             />
                                                         </div>
                                                     </div>
                                                     <div className={style.project_context}>
                                                         <div className={`${style.project_type} ${raleway_2.className}`}>Sewerin</div>
-                                                        <div className={`${style.big_text} ${raleway_3.className}`}>Producto</div>
+                                                        <div className={`${style.big_text} ${raleway_3.className}`}>Detectores de Fuga de Agua</div>
                                                         <div className={style.secondary_button_wrapper}>
                                                             <a href="#"
                                                                 onMouseOver={handleMouseOver}
@@ -1005,14 +1011,14 @@ function Home() {
                                                         <div className={`${style.project_image_wrapper}`}>
                                                             <Image
                                                                 alt="Producto 1"
-                                                                src={product_1}
+                                                                src={p3}
                                                                 className={style.project_image}
                                                             />
                                                         </div>
                                                     </div>
                                                     <div className={style.project_context}>
-                                                        <div className={`${style.project_type} ${raleway_2.className}`}>Sewerin</div>
-                                                        <div className={`${style.big_text} ${raleway_3.className}`}>Producto</div>
+                                                        <div className={`${style.project_type} ${raleway_2.className}`}>SafeHome</div>
+                                                        <div className={`${style.big_text} ${raleway_3.className}`}>Kit Detector de Bacterias</div>
                                                         <div className={style.secondary_button_wrapper}>
                                                             <a href="#"
                                                                 onMouseOver={handleMouseOver}

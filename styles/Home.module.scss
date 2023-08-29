@@ -468,11 +468,12 @@ body #Home {
     display: flex;
     position: relative;
     overflow: hidden;
+    justify-content: center;
 }
 
 .image_wrapper.hero {
     img {
-        max-width: 100%;
+        max-width: 75%;
         object-fit: cover;
         display: block;
         border: 0;
@@ -815,6 +816,7 @@ body #Home {
     flex: none;
     order: -1;
     display: flex;
+    color: #fff;
 }
 
 .primary_loop_text {
@@ -1062,7 +1064,7 @@ body #Home {
 
 .project_image_wrapper {
     position: relative;
-    width: 29vw;
+    width: 35vw;
     height: 70vh;
     -webkit-transform: rotate(5.2deg);
     -ms-transform: rotate(5.2deg);

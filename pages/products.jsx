@@ -8,6 +8,7 @@ import style from '../styles/Products.module.scss'
 
 // Images
 import effect_2 from '../public/assets/effect_2.png';
+import p1 from '../public/assets/Home/Products/p1.jpg'
 
 // Gsap
 import { gsap } from 'gsap';
@@ -17,6 +18,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 // Components
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
+
+import ProductCard from '@/components/productCard';
+
 
 // Fonts
 import { Raleway } from 'next/font/google'
@@ -69,7 +73,7 @@ function Products() {
             gsap.to(photoBlog, {
                 y: "30%",
                 ease: 'none',
-                scale: 1.8,
+                scale: 1.5,
                 scrollTrigger: {
                     trigger: photoBlog,
                     start: "top center",
@@ -85,10 +89,10 @@ function Products() {
 
 
     // Cursor
-    const followCursor = (e) => {
-        const target = document.getElementById("divSeguidor");
+    const followCursor = (e, element) => {
+        const target = element;
         const rect = target.getBoundingClientRect();
-        const container = document.getElementById("divContenedor");
+        const container = element.parentNode; // Obtiene el elemento padre de cada elemento ".elemento-animado"
         const containerRect = container.getBoundingClientRect();
 
         const centerX = containerRect.left + containerRect.width / 2;
@@ -108,12 +112,12 @@ function Products() {
                 duration: 0.3,
             });
         } else {
-            resetCursor();
+            resetCursor(element);
         }
     };
 
-    const resetCursor = () => {
-        const target = document.getElementById("divSeguidor");
+    const resetCursor = (element) => {
+        const target = element;
         gsap.to(target, {
             xPercent: 0,
             yPercent: 0,
@@ -122,12 +126,17 @@ function Products() {
     };
 
     useEffect(() => {
-        document.addEventListener("mousemove", followCursor);
-        document.addEventListener("mouseleave", resetCursor);
+        const elements = document.querySelectorAll(".elemento-animado");
+        elements.forEach((element) => {
+            document.addEventListener("mousemove", (e) => followCursor(e, element));
+            document.addEventListener("mouseleave", () => resetCursor(element));
+        });
 
         return () => {
-            document.removeEventListener("mousemove", followCursor);
-            document.removeEventListener("mouseleave", resetCursor);
+            elements.forEach((element) => {
+                document.removeEventListener("mousemove", (e) => followCursor(e, element));
+                document.removeEventListener("mouseleave", () => resetCursor(element));
+            });
         };
     }, []);
 
@@ -165,7 +174,7 @@ function Products() {
                 duration: 1000, // 1 segundo
                 scrollTrigger: {
                     trigger: text,
-                    start: 'top center',
+                    start: 'top bottom',
                     end: 'bottom center',
                     // markers: true,
                     scrub: 1, // Ajusta este valor para cambiar la sensibilidad del desplazamiento
@@ -292,33 +301,33 @@ function Products() {
 
 
     const catalog_title = useRef(null);
-  
+
     useEffect(() => {
-      const title = catalog_title.current;
-  
-      const tl = gsap.timeline();
-  
-      tl.fromTo(
-        title,
-        { y: '40px', opacity: 0 },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 1.5,
-            ease: 'power2.out',
-        },
-        '-=1' // Retrasa la animación del título en 1 segundo después de la animación del badge
-    )
-      ScrollTrigger.create({
-        trigger: title,
-        start: 'top 80%',
-        end: 'bottom 20%',
-        animation: tl,
-        scrub: true,
-      });
+        const title = catalog_title.current;
+
+        const tl = gsap.timeline();
+
+        tl.fromTo(
+            title,
+            { y: '40px', opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1.5,
+                ease: 'power2.out',
+            },
+            '-=1' // Retrasa la animación del título en 1 segundo después de la animación del badge
+        )
+        ScrollTrigger.create({
+            trigger: title,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            animation: tl,
+            scrub: true,
+        });
     }, []);
-    
-    
+
+
 
     return (
         <>
@@ -326,7 +335,6 @@ function Products() {
                 <title>Productos</title>
                 <meta name="description" content="Aquaklin es una empresa líder en la purificación de agua. Ofrecemos una amplia gama de productos y servicios para purificar agua para el hogar, la oficina y la industria. Nuestros productos son altamente eficaces y seguros, y nuestros servicios son personalizados para satisfacer las necesidades individuales de cada cliente." />
                 <meta name="keywords" content="purificadores de agua, Aquaklin, Aquaklinonline, productos, servicios, hogar, oficina, industria, eficaz, seguro, personalizado, agua purificada, agua potable, agua limpia, agua segura, agua saludable, agua fresca, agua de calidad, agua filtrada, agua tratada, agua purificada" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             {/* === NAVBAR === */}
@@ -391,268 +399,152 @@ function Products() {
                             <h3 className={style.title_3}>
                                 El agua es vida, y AquaKlin es la clave para tener agua limpia y segura.
                             </h3>
-
                         </div>
 
-                        {/* 1 */}
-                        <div className={`${style.margin_100px} ${style._1}`}>
-                            <div className={style.blog_small_wrapper}>
-                                <div className={style.w_dyn_list}>
-                                    <div className={style.w_dyn_items}>
-                                        <div className={style.w_dyn_item}>
-                                            <div>
-                                                <div
-                                                    className={`${style.blog_content} ${style._2} image_reveral`}
-                                                    id="divContenedor"
-                                                >
-                                                    <img
-                                                        src="https://assets.website-files.com/61928ef6a6ac6c87de171cd9/619500635e8b16149270723e_blog-thumbnail.jpg"
-                                                        loading="eager"
-                                                        alt=""
-                                                        className={`${style.photo_blog} Img_Product`}
-                                                    />
-                                                    <a
-                                                        href="/post/15-reasons-why-you-shouldnt-ignore-travel"
-                                                        className={`${style.project_circle} ${style._2} ${style.w_inline_block} ${raleway_4.className}`}
-                                                        id="divSeguidor"
-                                                    >
-                                                        <div className={style.view_project}>
-                                                            Ver
-                                                            <br />
-                                                            Producto
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div className={`${style.blog_bottom_content} text_reveral`}>
-                                                    <div className={style.category_flex}>
-                                                        <a
-                                                            href="/post-category/travelling"
-                                                            className={`${style.category} ${raleway_3.className}`}
-                                                        >
-                                                            Aquaklin
-                                                        </a>
-                                                    </div>
-                                                    <a
-                                                        href="/post/15-reasons-why-you-shouldnt-ignore-travel"
-                                                        className={`${style.blog_title} ${style._2} ${raleway_3.className}`}
-                                                    >
-                                                        Sulfato de Aluminio
-                                                    </a>
-                                                    <div className={style.margin_30px}>
-                                                        <div className={`${style.blog_subhead} ${style._2} ${raleway.className} text_color`}>
-                                                            Elimina las impurezas del agua, como los sedimentos, las bacterias,
-                                                            los virus y clarifica el agua.
-                                                        </div>
-                                                    </div>
-                                                    <div className={style.margin_15px}>
-                                                        <div className={style.author_name}>
-                                                            <p className={`${style.by_text} ${raleway_2.className} text_color`}>Disponible</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ProductCard
+                            products={{
+                                data: [
+                                    {
+                                        image_product: "/assets/Home/Products/p1.jpg",
+                                        width: 1157,
+                                        height: 1688,
+                                        link: "/products/aluminum-sulfate",
+                                        category: "Aquaklin",
+                                        name: "Sulfato de Aluminio",
+                                        content: "Elimina las impurezas del agua, como los sedimentos, las bacterias, los virus y clarifica el agua.",
+                                        status: "Disponible",
+                                        style: `${style.margin_100px} ${style._1}`,
+                                        category_color: `${style.category} ${raleway_3.className}`,
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_2.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/aquaphon-a-200",
+                                        category: "Sewerin",
+                                        name: "Aquaphon A 200",
+                                        content: "Ideal para la localización de fugas y redes de tuberias.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._2}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
 
-                        {/* 2 */}
-                        <div className={`${style.margin_100px} ${style._2}`}>
-                            <div className={style.blog_small_wrapper}>
-                                <div className={style.w_dyn_list}>
-                                    <div className={style.w_dyn_items}>
-                                        <div className={style.w_dyn_item}>
-                                            <div
-                                            >
-                                                <div
-                                                    className={`${style.blog_content} ${style._2} image_reveral`}
-                                                // id="divContenedor"
-                                                >
-                                                    <img
-                                                        height={100}
-                                                        src="https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950605af04d40fbfe69eec_blog-thumbnail-2.jpg"
-                                                        alt=""
-                                                        className={`${style.photo_blog} Img_Product`}
-                                                    />
-                                                    <a
-                                                        // id="divSeguidor"
-                                                        href="/post/heres-what-no-one-tells-you-about-fashion"
-                                                        className={`${style.project_circle} ${style._2} ${style.w_inline_block} ${raleway_4.className}`}
-                                                    >
-                                                        <div className={style.view_project}>
-                                                            Ver
-                                                            <br />
-                                                            Producto
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div className={`${style.blog_bottom_content} text_reveral`}>
-                                                    <div className={style.category_flex}>
-                                                        <a
-                                                            href="/post-category/travelling"
-                                                            className={`${style.category} ${raleway_3.className}`}
-                                                        >
-                                                            Aquaklin
-                                                        </a>
-                                                    </div>
-                                                    <a
-                                                        href="/post/15-reasons-why-you-shouldnt-ignore-travel"
-                                                        className={`${style.blog_title} ${style._2} ${raleway_3.className}`}
-                                                    >
-                                                        Sulfato de Aluminio
-                                                    </a>
-                                                    <div className={style.margin_30px}>
-                                                        <div className={`${style.blog_subhead} ${style._2} ${raleway.className} text_color`}>
-                                                            Elimina las impurezas del agua, como los sedimentos, las bacterias,
-                                                            los virus y clarifica el agua.
-                                                        </div>
-                                                    </div>
-                                                    <div className={style.margin_15px}>
-                                                        <div className={style.author_name}>
-                                                            <p className={`${style.by_text} ${raleway_2.className}`}>Disponible</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_3.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/aquaphon-a-50",
+                                        category: "Sewerin",
+                                        name: "Aquaphon A 50",
+                                        content: "Acceso asequible a la detección de fugas de agua con un desempeño acústico profesional.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._3}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
 
-                        {/* 3 */}
-                        <div className={`${style.margin_100px} ${style._3}`}>
-                            <div className={style.blog_small_wrapper}>
-                                <div className={style.w_dyn_list}>
-                                    <div className={style.w_dyn_items}>
-                                        <div className={style.w_dyn_item}>
-                                            <div
-                                                style={{ opacity: 1 }}
-                                            >
-                                                <div
-                                                    className={`${style.blog_content} ${style._2} image_reveral`}
-                                                >
-                                                    <img
-                                                        src="https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950a02e861101172ce76b7_blog-thumbnail-3.jpg"
-                                                        loading="eager"
-                                                        alt=""
-                                                        sizes="(max-width: 767px) 100vw, 49vw"
-                                                        srcSet="https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950a02e861101172ce76b7_blog-thumbnail-3-p-500.jpeg 500w, https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950a02e861101172ce76b7_blog-thumbnail-3-p-800.jpeg 800w, https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950a02e861101172ce76b7_blog-thumbnail-3-p-1080.jpeg 1080w, https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950a02e861101172ce76b7_blog-thumbnail-3.jpg 1200w"
-                                                        className={`${style.photo_blog} Img_Product`}
-                                                    />
-                                                    <a
-                                                        data-w-id="64913938-d5b2-01b5-8b0b-7cf1a99a3b76"
-                                                        href="/post/a-beginners-guide-to-magazine"
-                                                        className={`${style.project_circle} ${style._2} ${style.w_inline_block} ${raleway_4.className}`}
-                                                    >
-                                                        <div className={style.view_project}>
-                                                            Ver
-                                                            <br />
-                                                            Productos
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div className={`${style.blog_bottom_content} text_reveral`}>
-                                                    <div className={style.category_flex}>
-                                                        <a
-                                                            href="/post-category/travelling"
-                                                            className={`${style.category} ${raleway_3.className}`}
-                                                        >
-                                                            Aquaklin
-                                                        </a>
-                                                    </div>
-                                                    <a
-                                                        href="/post/15-reasons-why-you-shouldnt-ignore-travel"
-                                                        className={`${style.blog_title} ${style._2} ${raleway_3.className}`}
-                                                    >
-                                                        Sulfato de Aluminio
-                                                    </a>
-                                                    <div className={style.margin_30px}>
-                                                        <div className={`${style.blog_subhead} ${style._2} ${raleway.className} text_color`}>
-                                                            Elimina las impurezas del agua, como los sedimentos, las bacterias,
-                                                            los virus y clarifica el agua.
-                                                        </div>
-                                                    </div>
-                                                    <div className={style.margin_15px}>
-                                                        <div className={style.author_name}>
-                                                            <p className={`${style.by_text} ${raleway_2.className}`}>Disponible</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_4.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/aquatest-t10",
+                                        category: "Sewerin",
+                                        name: "AquaTest T10",
+                                        content: "Robusto baston de escucha para la detección acústica de fugas de agua en exteriores.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._2}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
 
-                        {/* 4 */}
-                        <div className={`${style.margin_100px} ${style._2}`}>
-                            <div className={style.blog_small_wrapper}>
-                                <div className={style.w_dyn_list}>
-                                    <div className={style.w_dyn_items}>
-                                        <div className={style.w_dyn_item}>
-                                            <div
-                                            >
-                                                <div
-                                                    className={`${style.blog_content} ${style._2} image_reveral`}
-                                                >
-                                                    <img
-                                                        height={100}
-                                                        loading="eager"
-                                                        src="https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950bb11104be52a8e5494f_blog-thumbnail-4.jpg"
-                                                        alt=""
-                                                        sizes="(max-width: 767px) 100vw, 49vw"
-                                                        srcSet="https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950bb11104be52a8e5494f_blog-thumbnail-4-p-500.jpeg 500w, https://assets.website-files.com/61928ef6a6ac6c87de171cd9/61950bb11104be52a8e5494f_blog-thumbnail-4.jpg 1200w"
-                                                        className={`${style.photo_blog} Img_Product`}
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_5.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/stethophon-04",
+                                        category: "Sewerin",
+                                        name: "Stethophon 04",
+                                        content: "Receptor compacto, manejable con una sola mano, para la detección acústica de fugas de agua en edificios.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._3}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
 
-                                                    />
-                                                    <a
-                                                        href="/post/this-weeks-top-stories-about-lifestyle"
-                                                        className={`${style.project_circle} ${style._2} ${style.w_inline_block} ${raleway_4.className}`}
-                                                    >
-                                                        <div className={style.view_project}>
-                                                            Ver
-                                                            <br />
-                                                            Productos
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div className={`${style.blog_bottom_content} text_reveral`}>
-                                                    <div className={style.category_flex}>
-                                                        <a
-                                                            href="/post-category/travelling"
-                                                            className={`${style.category} ${raleway_3.className}`}
-                                                        >
-                                                            Aquaklin
-                                                        </a>
-                                                    </div>
-                                                    <a
-                                                        href="/post/15-reasons-why-you-shouldnt-ignore-travel"
-                                                        className={`${style.blog_title} ${style._2} ${raleway_3.className}`}
-                                                    >
-                                                        Sulfato de Aluminio
-                                                    </a>
-                                                    <div className={style.margin_30px}>
-                                                        <div className={`${style.blog_subhead} ${style._2} ${raleway.className} text_color`}>
-                                                            Elimina las impurezas del agua, como los sedimentos, las bacterias,
-                                                            los virus y clarifica el agua.
-                                                        </div>
-                                                    </div>
-                                                    <div className={style.margin_15px}>
-                                                        <div className={style.author_name}>
-                                                            <p className={`${style.by_text} ${raleway_2.className}`}>Disponible</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_6.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/aquaphon-af-100",
+                                        category: "Sewerin",
+                                        name: "Aquaphon AF 100",
+                                        content: "Combinación de la detección acústica de fuga de agua con la localización de tuberías.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._2}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_7.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/secorrphon-ac-200",
+                                        category: "Sewerin",
+                                        name: "SeCorrPhon AC 200",
+                                        content: "Combinación de correlador y localizador de fugas de agua profesional - flexible - inteligente.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._3}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_8.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/variotec-460",
+                                        category: "Sewerin",
+                                        name: "VARIOTEC 460",
+                                        content: "El especialista en detección de fugas con gas trazador hidrógeno.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._2}`,
+                                        category_color: `${style.category} ${style.sewerin} ${raleway_3.className}`,
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_9.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/diy-bacteria-test",
+                                        category: "SafeHome",
+                                        name: "Bacteria In Water Individual Test",
+                                        content: "Kit de prueba de bacterias en agua potable, detecta 50 especies diferentes de bacterias coliformes tan rápido como 24 horas.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._3}`,
+                                        category_color: `${style.category} ${style.safehome} ${raleway_3.className}`,
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_10.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/high-quality-drinking-water-test-kit",
+                                        category: "SafeHome",
+                                        name: "Kit de prueba de agua potable de alta calidad",
+                                        content: "Pruebas completas para 50 parámetros diferentes.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._2}`,
+                                        category_color: `${style.category} ${style.safehome} ${raleway_3.className}`,
+                                    },
+                                    {
+                                        image_product: "/assets/Home/Products/product_11.jpg",
+                                        width: 342,
+                                        height: 500,
+                                        link: "/products/nautilus-system",
+                                        category: "Aganova",
+                                        name: "Sistema Nautilus",
+                                        content: "Solución innovadora y eficaz para la detección de fugas en tuberías de gran diametro.",
+                                        status: "Bajo Encargo",
+                                        style: `${style.margin_100px} ${style._3}`,
+                                        category_color: `${style.category} ${style.aganova} ${raleway_3.className}`,
+                                    },
+                                ]
+                            }}
+                        />
+
                     </div>
                 </div>
 

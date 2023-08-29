@@ -1,0 +1,254 @@
+[
+    {
+        "id": "aluminum-sulfate",
+        "title": "Sulfato de Aluminio",
+        "category_link": "Clarificador de Agua",
+        "category_link_color": "aquaklin",
+        "title_product": "Sulfato de Aluminio",
+        "short_description": [
+            "Aquaklin ofrece Sulfato de Aluminio como el quimico utilizado, para clarificar el agua de piscinas y tanques. Los productos de Aquaklin son fáciles de usar y no requieren ningún equipo especial."
+        ],
+        "image_product": "p1",
+        "title_description": "Sulfato de Aluminio",
+        "description": [
+            "El Sulfato de Aluminio, es una sal fácilmente soluble en agua, pueden prepararse soluciones con concentraciones de sulfato sólido hasta de 55%. Para el tratamiento de agua se sugiere que la concentración no sea superior a 5% de sulfato de aluminio sólido, con el fin de lograr una buena velocidad de disolución.",
+            "El tiempo de residencia en el tanque donde se disuelve el material no debe ser inferior a 2,5 min. La dósis máxima es de 150 mg/L y el aluminio residual en el agua potable no debe exceder 0,2 mg/L."
+        ],
+        "distributed": "Distribuido y Certificado por",
+        "certificate": "/assets/Home/Products/certificado-NSF.png",
+        "awwa": "/assets/Home/Products/AWWA.png",
+        "characteristics": [
+            "Guía del usuario rápida y fiable a través de los diferentes casos de aplicación.",
+            "Trabajo cómodo y sin cables mediante componentes inalámbricos.",
+            "Localización de fugas rápida y precisa a través de filtros inteligentes.",
+            "Reproductor de audio integrado para la comparación directa e in situ de sonidos de fugas.",
+            "Estanco al agua (IP67)."
+        ]
+    },
+    {
+        "id": "aquaphon-a-200",
+        "title": "Aquaphon A 200",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "Aquaphon A 200",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p2",
+        "title_description": "Aquaphon con receptor A 200",
+        "description": "Ideal para la localización de fugas y redes de tuberias.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Guía del usuario rápida y fiable a través de los diferentes casos de aplicación.",
+            "Trabajo cómodo y sin cables mediante componentes inalámbricos.",
+            "Localización de fugas rápida y precisa a través de filtros inteligentes.",
+            "Reproductor de audio integrado para la comparación directa e in situ de sonidos de fugas.",
+            "Estanco al agua (IP67)."
+        ]
+    },
+    {
+        "id": "aquaphon-a-50",
+        "title": "Aquaphon A 50",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "Aquaphon A 50",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p3",
+        "title_description": "Aquaphon con receptor A 50",
+        "description": "Acceso asequible a la detección de fugas de agua con un desempeño acústico profesional.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Gran autonomía; una carga completa es sufuciente para una semana de trabajo.",
+            "Los auriculares inalámbricos reducen los ruidos molestos.",
+            "Se transporta de manera sencilla gracias a su peso.",
+            "Rangos de frecuencia adaptables individualmente al oido del usuario."
+        ]
+    },
+    {
+        "id": "aquatest-t10",
+        "title": "AquaTest T10",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "AquaTest T10",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p4",
+        "title_description": "AquaTest T10",
+        "description": "Robusto baston de escucha para la detección acústica de fugas de agua en exteriores.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Innovadora combinación de amplificación electrónico y bastón de escucha sin cables.",
+            "Excelente calidad del sonido gracias a la avanzada tecnología de su micrófono.",
+            "Visualización clara de los sonidos en su pantalla para ayudar a los usuarios con menos experiencia.",
+            "Ausencia de ruidos molestos en los auriculares gracias a su novedoso sensor táctil.",
+            "Ajuste individual de las bandas de filtro, del volumen y de la función de protección de los oídos para conseguir una óptima percepción de los sonidos.",
+            "Dos variantes de producto disponibles: con modulo de radio SDR (Inalámbrico) y sin módulo SDR (con cable)."
+        ]
+    },
+    {
+        "id": "stethophon-04",
+        "title": "Stethophon 04",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "Stethophon 04",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p5",
+        "title_description": "Stethophon 04",
+        "description": "Receptor compacto, manejable con una sola mano, para la detección acústica de fugas de agua en edificios.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Auriculares inalámbricos con trasnmisión digital de señales (SDR).",
+            "Posibilidad de conexión de un micrófono de suelo externo.",
+            "8 niveles de filtro.",
+            "Función de protección de los oídos.",
+            "Visualización númerica del nivel de sonido mínimo (0 - 999)."
+        ]
+    },
+    {
+        "id": "aquaphon-af-100",
+        "title": "Aquaphon AF 100",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "Aquaphon AF 100",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p6",
+        "title_description": "Aquaphon AF 100",
+        "description": "Combinación de la detección acústica de fuga de agua con la localización de tuberías.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Detección acústica de fugas de agua.",
+            "Localización acústica de tuberías.",
+            "Localización electrónica de tuberías metálicas.",
+            "Localización electrónica de tuberías no metálicas."
+        ]
+    },
+    {
+        "id": "secorrphon-ac-200",
+        "title": "SeCorrPhon AC 200",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "SeCorrPhon AC 200",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p7",
+        "title_description": "SeCorrPhon AC 200",
+        "description": "Combinación de correlador y localizador de fugas de agua profesional - flexible - inteligente.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Detector de fugas multifuncional que ofrece tres funciones en una: prelocalización, localización precisa y correlación.",
+            "Excelente calidad de sonido para minimizar las interferencias de sonido.",
+            "Detección de fugas rápida y precisa mediante filtrado inteligente.",
+            "Reproductor de audio integrado para comparar los ruidos de fuga directamente en campo.",
+            "Orientación del usuario rápida y sencilla a través de aplicaciones.",
+            "Optimización independiente de los resultados de medición seleccionando automaticamente los filtros apropiados.",
+            "Visualizaciones en pantalla, de fácil manejo, de los resultadosde medición: información concreta sobre la posición de la fuga en lugar de tener que interpretar curvas completas.",
+            "Gran variedad de componentes del sistema para la detección acústica de fugas de agua (como varilla de transporte, micrófonos de suelo para zonas pavimentadas y para zonas de tierra) y correlación (tales como micrófonos e hidrófonos piezoeléctricos)."
+        ]
+    },
+    {
+        "id": "variotec-460",
+        "title": "Variotec 460",
+        "category_link": "Detectores de Fuga",
+        "category_link_color": "sewerin",
+        "title_product": "Variotec 460",
+        "short_description": [
+            "Existen diversos sistemas para la detección de fugas de agua con métodos acústicos, que abarcan desde un bastón de escucha robusto para la prelocalización de fugas, hasta un sistema profesional formado por receptor, bastón de escucha y micrófono de suelo para las tareas de prelocalización y localización, sin olvidar un receptor compacto que se maneja con una sola mano."
+        ],
+        "image_product": "p8",
+        "title_description": "Gas trazador Variotec 460",
+        "description": "El especialista en detección de fugas con gas trazador hidrógeno.",
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Sensibilidad cruzada extremadamente reducida del sensor semiconductor sensible al gas frente a la humedad y al metano.",
+            "Rango de medición ampliado del sensor de conectividad térmica hasta 100% vol. de hidrógeno.",
+            "Transmisión de los resultados de medición mediante el puerto USB."
+        ]
+    },
+    {
+        "id": "diy-bacteria-test",
+        "title": "Bacteria In Water Individual Test",
+        "category_link": "Kit de prueba de bacterias en agua",
+        "category_link_color": "safehome",
+        "title_product": "Bacteria In Water Individual Test",
+        "short_description": [
+            "Las pruebas de detección de Safe Home le ofrecen una visión general de lo que contiene su agua. Los kits de DIY test de Safe Home proporcionan resultados inmediatos para fuentes de agua potable interiores y exteriores. Tanto si se encuentra en una residencia permanente como de viaje, la mayoría de las pruebas sólo tardan unos minutos en completarse."
+        ],
+        "image_product": "p9",
+        "title_description": "Bacteria In Water Individual Test",
+        "description": [
+            "El agua contaminada con bacterias como la E. coli puede causar enfermedades graves, incluso la muerte. Analizar periódicamente el agua potable en busca de bacterias es una excelente forma de garantizar la buena salud de su familia.",
+            "Hacer testeos regularmente al agua es la vía de asegurar la salud de la familia.",
+            "Después de recibir los resultados de las pruebas, la pregunta # 1 que se hace es: \"¿Qué hago ahora?\" Safe Home ofrece una amplia gama de productos. Póngase en contacto con nosotros en cualquier momento. Será un placer ayudarle."
+        ],
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Realice el análisis en su propia casa y a su conveniencia.",
+            "Cada envase contiene 1 vial para analizar la presencia de bacterias en el agua potable.",
+            "Puede detectar 50 especies diferentes de bacterias coliformes (incluida E. coli).",
+            "Detecta bacterias hasta 1 unidad formadora de colonias (la más baja posible).",
+            "Resultados en tan sólo 24 horas (la velocidad de los resultados puede variar).",
+            "Seguro y fácil de usar.",
+            "El mejor valor en precisión y fiabilidad para la seguridad del agua potable de su familia."
+        ]
+    },
+    {
+        "id": "high-quality-drinking-water-test-kit",
+        "title": "Sistema Nautilus",
+        "category_link": "Detección de fugas en tuberías",
+        "category_link_color": "aganova",
+        "title_product": "Sistema Nautilus",
+        "short_description": [
+            "El sistema nautilus es una tecnología in-line, sin cable y de flotabilidad neutra para detección de fugas en tuberías de gran diametro."
+        ],
+        "image_product": "p10",
+        "title_description": "Sistema Nautilus",
+        "description": [
+            "Contiene un conjunto de recipientes de prueba de calidad del agua para permitirle probar su agua potable para 50 contaminantes (6 en orgánicos, 12 propiedades físicas y 32 metales tóxicos). Seguro y fácil de usar.",
+            "Las pruebas de laboratorio certificadas por la EPA de Safe Home proporcionan la precisión necesaria para confirmar si su agua supera los límites de contaminación máxima federales establecidos por la EPA.",
+            "Para el consumo humano. Incluye una bonificación de bacterias seguras en la prueba de agua. Realice esta prueba usted mismo con su propia comodidad y en la comodidad de su propia casa (Total Coliform y E. coli). El mejor valor en precisión y fiabilidad para la seguridad del agua potable de tu familia."
+        ],
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Realice el análisis en su propia casa y a su conveniencia.",
+            "Cada envase contiene 1 vial para analizar la presencia de bacterias en el agua potable.",
+            "Puede detectar 50 especies diferentes de bacterias coliformes (incluida E. coli).",
+            "Detecta bacterias hasta 1 unidad formadora de colonias (la más baja posible).",
+            "Resultados en tan sólo 24 horas (la velocidad de los resultados puede variar).",
+            "Seguro y fácil de usar.",
+            "El mejor valor en precisión y fiabilidad para la seguridad del agua potable de su familia."
+        ]
+    },
+    {
+        "id": "nautilus-system",
+        "title": "Sistema Nautilus",
+        "category_link": "Detección de fugas en tuberías",
+        "category_link_color": "aganova",
+        "title_product": "Sistema Nautilus",
+        "short_description": [
+            "Solución innovadora y eficaz para la detección de fugas en tuberías de gran diametro."
+        ],
+        "image_product": "p11",
+        "title_description": "Sistema Nautilus",
+        "description": [
+            "Nautilus consiste en una esfera de pequeñas dimensiones que se inserta en la red de distribución y navega libremente por la tubería conducida por el caudal del agua.",
+            "El sonido generado por una fuga, bolsa de aire o anomalía tiene unas características específicas y Nautilus graba este sonido desde el interior de la tubería. Cuando la esfera es extraída, un software desarrollado por Aganova procesa la información recopilada usando un algoritmo matemático que muestra la localización exacta de las fugas, bolsas de aire anomalías encontradas."
+        ],
+        "distributed": "Distribuido por",
+        "characteristics": [
+            "Rapidez: Puede revisar una media de 3 kilómwreos por hora y más de 35 kilómetros en una sola inserción.",
+            "Eficiencia: Dado que la esfera navega libremente empujada por el caudal, el sistema evita los obstáculos de acumulación de sedimentos, arena , válvulas, etc.",
+            "Precisión: Con el uso de sincronizadores, el margen de error se reduce al minimo.",
+            "Efectividad: Puede detectar fugas deesde 0,01 litros por segundo.",
+            "Eficacia: Puede aplicarse en todo tipo de materiales, sin afectarle la profundidad en la que se encuentra la tubería.",
+            "Rentabilidad: Es el sistema más asequible para la detección de fugas de agua en tuberías de gran diámetro. A mayor número dee kilómetro en una inspección o contrato, menor precio por kilómetro."
+        ]
+    }
+]

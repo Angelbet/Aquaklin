@@ -96,6 +96,18 @@ body #Product {
     text-transform: uppercase;
     text-decoration: underline;
     cursor: pointer;
+
+    &.sewerin {
+        color: $orange;
+    }
+
+    &.safehome {
+        color: #008000;
+    }
+
+    &.aganova {
+        color: #70ba2b;
+    }
 }
 
 .h1_post {
@@ -141,10 +153,53 @@ body #Product {
     top: 0%;
     right: 0%;
     bottom: 0%;
-    background-image: url(../public/assets/Home/Products/product1.jpg);
     background-position: 50% 65%;
     background-size: cover;
     background-repeat: no-repeat;
+
+    &.p1 {
+        background-image: url(../public/assets/Home/Products/product_1_bg.jpg);
+    }
+
+    &.p2 {
+        background-image: url(../public/assets/Home/Products/product_2_bg.jpg);
+    }
+
+    &.p3 {
+        background-image: url(../public/assets/Home/Products/product_3_bg.jpg);
+    }
+
+    &.p4 {
+        background-image: url(../public/assets/Home/Products/product_4_bg.jpg);
+    }
+
+    &.p5 {
+        background-image: url(../public/assets/Home/Products/product_5_bg.jpg);
+    }
+
+    &.p6 {
+        background-image: url(../public/assets/Home/Products/product_6_bg.jpg);
+    }
+
+    &.p7 {
+        background-image: url(../public/assets/Home/Products/product_7_bg.jpg);
+    }
+
+    &.p8 {
+        background-image: url(../public/assets/Home/Products/product_8_bg.jpg);
+    }
+
+    &.p9 {
+        background-image: url(../public/assets/Home/Products/product_9_bg.jpg);
+    }
+
+    &.p10 {
+        background-image: url(../public/assets/Home/Products/product_10_bg.jpg);
+    }
+
+    &.p11 {
+        background-image: url(../public/assets/Home/Products/product_11_bg.jpg);
+    }
 }
 
 .intro_bottom_line {
@@ -174,6 +229,7 @@ body #Product {
     position: -webkit-sticky;
     position: sticky;
     display: block;
+    margin-bottom: 150px;
 }
 
 .w_container {
@@ -262,7 +318,7 @@ body #Product {
     float: left;
     margin-right: 15px;
     clear: none;
-    max-width: 184px;
+    max-width: 300px;
 }
 
 .w_richtext figure div {
@@ -553,6 +609,10 @@ body #Product {
 
 .image_case_01.space_margin {
     margin-top: 80px;
+    margin-right: 0px;
+}
+
+.image_case_01.no_margim {
     margin-right: 0px;
 }
 

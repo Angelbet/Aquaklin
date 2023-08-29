@@ -256,7 +256,7 @@ body #Products {
 }
 
 .photo_blog {
-    width: 100%;
+    width: 850%;
     height: 100%;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -293,7 +293,7 @@ body #Products {
     opacity: 1;
     -webkit-backdrop-filter: brightness(120%) blur(10px);
     backdrop-filter: brightness(120%) blur(10px);
-    color: #fff;
+    color: #000;
     font-style: italic;
     text-align: center;
     letter-spacing: 3px;
@@ -336,6 +336,17 @@ body #Products {
     background-color: $darkblue;
     color: #fff;
     font-size: 13px;
+
+    &.sewerin {
+        background-color: $orange;
+    }
+
+    &.safehome {
+        background-color: #008000;
+    }
+    &.aganova {
+        background: linear-gradient(143deg, rgba(0, 154, 221, 1) 0%, rgba(112, 186, 43, 1) 47%, rgba(233, 114, 0, 1) 100%);
+    }
 }
 
 .blog_title {
