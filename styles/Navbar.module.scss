@@ -226,8 +226,8 @@ $blue3: #a4dbf0;
 .w_nav_button {
     position: relative;
     float: right;
-    padding: 18px;
-    font-size: 24px;
+    padding: 15px;
+    font-size: 1px;
     display: none;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -241,7 +241,7 @@ $blue3: #a4dbf0;
 .w_nav_overlay {
     position: absolute;
     overflow: hidden;
-    display: none;
+    // display: none;
     top: 100%;
     left: 0;
     right: 0;
@@ -351,7 +351,17 @@ $blue3: #a4dbf0;
 .w__nav_dropdown_list_open {
     position: static;
 }
-
+.open_box {
+    display: block !important;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #C8C8C8;
+    text-align: center;
+    overflow: visible;
+    min-width: 200px;
+}
 
 // ========== BreakPoints ==========
 
@@ -413,6 +423,11 @@ $blue3: #a4dbf0;
 }
 
 @media screen and (max-width: 991px) {
+    .brand_logo {
+        height: 100%;
+        width: 12rem;
+    }
+    
     .sticky_nav {
         display: none;
     }
@@ -452,6 +467,7 @@ $blue3: #a4dbf0;
         -ms-grid-row-span: 1;
         grid-row-end: span 1;
     }
+
     #w-node-aa1cfef0-2bb1-d85c-f3fc-fe33f3521c1d-f3521be7 {
         -ms-grid-column: span 1;
         grid-column-start: span 1;
@@ -464,9 +480,10 @@ $blue3: #a4dbf0;
     }
 
     .menu_button {
-        border-radius: 5px;
-        background-color: #f6f4ff;
-        color: #100b47;
+        border-radius: 1rem;
+        background-color: $darkblue;
+        color: #FFF;
+        cursor: pointer;
     }
 
     .nav_menu_grid {
@@ -535,5 +552,42 @@ $blue3: #a4dbf0;
     .nav_link_mbl {
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .w_nav_brand {
+        padding-left: 10px;
+    }
+    .brand_logo {
+        height: 100%;
+        width: 11rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .navigation_mbl {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .container.mbl_nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-evenly;
+        -ms-flex-pack: justify;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .brand_logo {
+        height: 100%;
+        width: 10rem;
     }
 }

@@ -8,6 +8,8 @@ import styleTitle from '@/styles/Home.module.scss'
 
 // Images
 import About_hero from '../public/assets/About/about_hero.jpg'
+import about_1 from '../public/assets/About/about_1.jpeg'
+import about_2 from '../public/assets/About/about_2.jpg'
 import effect_1 from '../public/assets/effect_1.png';
 
 // Components
@@ -88,7 +90,11 @@ function About() {
 
             <Head>
                 <title>Aquaklin</title>
-                <meta name="description" content="Aquaklin Online" />
+                <meta name="description" content="Ofrecemos
+                                    una amplia gama de productos. Incluyendo equipos
+                                    para el procesamiento, filtración y tratamiento de aguas
+                                    blancas, residuales y asesoría técnica en búsqueda
+                                    de soluciones." />
             </Head>
 
             <Navbar />
@@ -183,8 +189,8 @@ function About() {
                     <div className={style.wide_container}>
                         <div className={style.home_services_container}>
                             <div className={style.services_secondary_image}>
-                                <img
-                                    src="https://assets.website-files.com/625e5259caacb1231850a793/625e9258af1d060f0b80ee63_services_image2.jpg"
+                                <Image
+                                    src={about_1}
                                     alt="Services Image"
                                     className={style.image}
                                 />
@@ -224,9 +230,11 @@ function About() {
                                     id={style["w-node-da6fa69e-f6c1-0e02-9bdf-9cfe135f545a-9ea51459"]}
                                     className={style.services_image_wrapper}
                                 >
-                                    <img
-                                        src="https://assets.website-files.com/625e5259caacb1231850a793/625e8bd6efdf3f2bc4373d12_services_hero_image.jpg"
-                                        alt="Services Hero Image"
+                                    <Image
+                                        src={about_2}
+                                        width={900}
+                                        height={700}
+                                        alt="Aquaklin People"
                                         className={`${style.image} ${style.secondary_services}`}
                                     />
                                 </div>
@@ -308,7 +316,7 @@ function About() {
                             >
                                 <div
                                     id={style["w-node-c8dd8ed8-7f78-891f-ca0d-e63fc2d4c582-9ea51459"]}
-                                    className={`${style.grid_item} ${style.first}`}
+                                    className={`${style.grid_item} ${style.hide_on_tablet} ${style.first}`}
                                 >
                                     <h3
                                         className={`${style.heading_3} ${style.bold} ${style.color_change} ${raleway_2.className}`}
@@ -320,7 +328,7 @@ function About() {
                                             className={`${style.paragraph} ${style.color_change} ${raleway_4.className}`}
                                         >
                                             Tenemos como objetivo comprometernos a trabajar con comunidades para garantizar que tengan acceso al agua potable limpia y segura.
-                                            Estamos seguros que <strong>el agua limpia es un derecho humano básico</strong> y estamos comprometidos a hacer nuestra parte para garantizar que todos puedan acceder a ella.
+                                            Estamos seguros que <strong>el agua limpia es un derecho humano básico</strong> y estamos comprometidos en hacer nuestra parte para garantizar que todos puedan acceder a ella.
                                         </p>
                                     </div>
                                 </div>

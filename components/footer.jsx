@@ -77,20 +77,18 @@ const Footer = () => {
                             <div className={style.footer_top}>
                                 <div className={style.moving_subtext_wrap}>
                                     <div ref={MovingSubtextRef1} className={`${style.moving_subtext} ${raleway.className}`}>
-                                        contenido contenido contenido contenido contenido contenido
-                                        contenido&nbsp;-</div><div ref={MovingSubtextRef2} className={`${style.moving_subtext} ${raleway.className}`}>contenido contenido contenido contenido contenido contenido
-                                            contenido&nbsp;-&nbsp;
+                                    Clarificador de Agua - Detectores de Fugas de Agua - Sistema Nautilus - Safe Home - Detectores de Bacteria - Clarificador de Agua - Detectores de Fugas de Agua - Sistema Nautilus - Safe Home - Detectores de Bacteria
                                     </div>
                                 </div>
-                                    <Link
-                                        href="/"
-                                        className={`${style.footer_contact_link} ${style.w_inline_block}`}
-                                        onMouseEnter={handleHoverIn}
-                                        onMouseLeave={handleHoverOut}
-                                    >
-                                        <div className={raleway_2.className}>Contacto</div>
-                                        <div className={style.footer_contact_link_line} ref={lineRef} />
-                                    </Link>
+                                <Link
+                                    href="https://wa.me/+584121331350"
+                                    className={`${style.footer_contact_link} ${style.w_inline_block}`}
+                                    onMouseEnter={handleHoverIn}
+                                    onMouseLeave={handleHoverOut}
+                                >
+                                    <div className={raleway_2.className}>Contacto</div>
+                                    <div className={style.footer_contact_link_line} ref={lineRef} />
+                                </Link>
                             </div>
                             <div className={`${style.footer_main}`}>
                                 <div className={`${style.footer_logo_text_wrap} ${raleway.className}`}>
@@ -101,7 +99,7 @@ const Footer = () => {
                                             alt="logo white"
                                         />
                                     </Link>
-                                    <div>Contenido contenido contenido contenido contenido</div>
+                                    <div>Brindando agua limpia y saludable.</div>
                                 </div>
                                 <div className={`${style.footer_links_wrap} ${raleway_2.className}`}>
                                     <div className={style.footer_link_column}>
@@ -109,7 +107,7 @@ const Footer = () => {
                                             Inicio
                                         </Link>
                                         <Link
-                                            href="/"
+                                            href="/about"
                                             className={style.footer_link}
                                         >
                                             Nosotros
@@ -117,52 +115,45 @@ const Footer = () => {
                                         <Link href="/products" className={style.footer_link}>
                                             Productos
                                         </Link>
-                                        <Link href="/blog" className={style.footer_link}>
+                                        <Link href="mailto:serviciosaquaklin@gmail.com" className={style.footer_link}>
                                             Contacto
                                         </Link>
                                     </div>
                                     <div className={style.footer_link_column}>
                                         <Link
-                                            href="https://twitter.com/"
+                                            href="https://www.instagram.com/aquaklin.ve/"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
                                             instagram
                                         </Link>
                                         <Link
-                                            href="https://www.instagram.com/"
+                                            href="mailto:serviciosaquaklin@gmail.com"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
                                             Email
                                         </Link>
                                         <Link
-                                            href="https://dribbble.com/"
+                                            href="https://www.facebook.com/people/Aquaklin/100090479326840/?refid=13"
                                             target="_blank"
                                             className={style.footer_link}
                                         >
                                             Facebook
                                         </Link>
-                                        <Link
-                                            href="https://www.behance.net/"
-                                            target="_blank"
-                                            className={style.footer_link}
-                                        >
-
-                                        </Link>
                                     </div>
                                     <div className={style.footer_link_column}>
-                                        <Link href="/" className={style.footer_link}>
-                                            Producto
+                                        <Link href="/products/aluminum-sulfate" className={style.footer_link}>
+                                            Sulfato de Aluminio
                                         </Link>
-                                        <Link href="/" className={style.footer_link}>
-                                            Producto
+                                        <Link href="/products/aquaphon-a-200" className={style.footer_link}>
+                                            Aquaphon A 200
                                         </Link>
-                                        <Link href="/" className={style.footer_link}>
-                                            Producto
+                                        <Link href="/products/diy-bacteria-test" className={style.footer_link}>
+                                            Kit de prueba de bacterias en agua
                                         </Link>
-                                        <Link href="/" className={style.footer_link}>
-                                            Producto
+                                        <Link href="/products/nautilus-system" className={style.footer_link}>
+                                            Sistema Nautilus
                                         </Link>
                                     </div>
                                 </div>

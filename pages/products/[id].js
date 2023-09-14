@@ -28,6 +28,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // Fonts
 import { Raleway } from 'next/font/google'
+import Link from "next/link";
 const raleway = Raleway({
     weight: '600',
     subsets: ['latin'],
@@ -69,16 +70,83 @@ export async function getStaticProps({ params }) {
     };
 }
 
-
+gsap.registerPlugin(ScrollTrigger);
 
 function ProductPage({ product }) {
+
+
+    // Content Product
+    const text = useRef(null);
+    const image_product = useRef(null);
+    const circle = useRef(null);
+    const text_description = useRef(null);
+
+    useEffect(() => {
+        const textReveral = text.current;
+        const image = image_product.current;
+        const circle_effect = circle.current;
+        const description = text_description.current;
+
+        const tl = gsap.timeline();
+
+        tl.fromTo(
+            textReveral,
+            { y: '-100px', opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 2,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: textReveral,
+                    start: 'top 80%',
+                    end: 'bottom 20%',
+                    // scrub: true,
+                },
+            }
+        )
+            .fromTo(
+                image,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 2.5,
+                    ease: 'power2.out',
+                },
+                '-=1' // Retrasa la animación del título en 1 segundo después de la animación del badge
+            )
+    }, []);
+
+
+    // Animation Text Reveral
+    useEffect(() => {
+        const textReveral = document.querySelectorAll('.text_reveral');
+        gsap.fromTo(
+            textReveral,
+            { y: '-100px', opacity: 0, duration: 2, },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: textReveral,
+                    start: 'top 80%',
+                    end: 'bottom 20%',
+                    // scrub: true,
+                },
+            }
+        );
+
+    }, []);
+
 
     return (
         <>
 
             <Head>
                 <title>{product.title}</title>
-                <meta name="description" content="Aquaklin Online" />
+                <meta name="description" content={product.short_description} />
             </Head>
 
 
@@ -89,15 +157,15 @@ function ProductPage({ product }) {
                     <div className={style.inner_hero_section}>
                         <div>
                             <div className={style.hero_inner_box}>
-                                <div className={style.hero_heading_post}>
+                                <div ref={text} className={style.hero_heading_post}>
                                     <div>
                                         <div className={style.hero_row_hidden}>
-                                            <a
-                                                href="#"
+                                            <Link
+                                                href="/products"
                                                 className={`${raleway_2.className} ${style.category_link} ${style.w__current} ${style[product.category_link_color]}`}
                                             >
                                                 {product.category_link}
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div>
                                             <div className={style.hero_row_hidden}>
@@ -121,7 +189,7 @@ function ProductPage({ product }) {
                                 </div> */}
                                 </div>
                             </div>
-                            <div className={style.post_hero_image}>
+                            <div ref={image_product} className={style.post_hero_image}>
                                 <img
                                     src="https://assets.website-files.com/620a86283656790bd590ec89/6213b06011fad812caaf4b69_Hero_services.jpg"
                                     sizes="100vw"
@@ -150,9 +218,7 @@ function ProductPage({ product }) {
                 <section className={style.section}>
                     <div className={`${style.container} ${style.w_container}`}>
 
-
-
-                        <div className={`${style.w_layout_grid} ${style.maingrid} ${style.margin_180}`}>
+                        <div className={`text_reveral ${style.w_layout_grid} ${style.maingrid} ${style.margin_180}`}>
                             <div
                                 id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb8bd-36c2eb42"]}
                                 className={style.content_case}
@@ -226,7 +292,7 @@ function ProductPage({ product }) {
                             </div>
                         </div>
 
-                        <div className={`${style.w_layout_grid} ${style.maingrid}`}>
+                        <div className={`text_reveral ${style.w_layout_grid} ${style.maingrid}`}>
                             <div
                                 id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb8d8-36c2eb42"]}
                                 className={style.content_case}
@@ -258,65 +324,66 @@ function ProductPage({ product }) {
                                 </div>
                             </div>
                         </div>
+
+
                         <div
                             id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92e-36c2eb42"]}
                             className={style.line_case}
                         />
-                        <div className={`${style.w_layout_grid} ${style.maingrid}`}>
 
-                            <div
-                                id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92a-36c2eb42"]}
-                                className={`${style.image_case_01} ${style.space_margin}`}
-                            >
-                                <div className={style.wrapper_case_image}>
-                                    <Image
-                                        loading="lazy"
-                                        src={manual_akuaklin}
-                                        alt=""
-                                        sizes="(max-width: 767px) 90vw, (max-width: 991px) 94vw, 88vw"
-                                        srcSet="https://uploads-ssl.webflow.com/63e3d8f484c90f172bc2eb4e/63ea565cf94bcf3c74a1bf04_pot-p-500.jpg 500w, https://uploads-ssl.webflow.com/63e3d8f484c90f172bc2eb4e/63ea565cf94bcf3c74a1bf04_pot-p-800.jpg 800w, https://uploads-ssl.webflow.com/63e3d8f484c90f172bc2eb4e/63ea565cf94bcf3c74a1bf04_pot-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/63e3d8f484c90f172bc2eb4e/63ea565cf94bcf3c74a1bf04_pot.jpg 1276w"
-                                        className={style.image_12}
-                                    />
+                        {/* Gallery */}
+
+                        {product.gallery_1 ? (
+                            <>
+                                <div className={`text_reveral ${style.w_layout_grid} ${style.maingrid}`}>
+
+                                    <div
+                                        id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92a-36c2eb42"]}
+                                        className={`${style.image_case_01} ${style.space_margin}`}
+                                    >
+                                        <div className={style.wrapper_case_image}>
+                                            {/* <Image
+                                                loading="lazy"
+                                                src={product.gallery_1}
+                                                alt={`Producto ${product.id}`}
+                                                className={style.image_12}
+                                            /> */}
+                                            {product.gallery_1 && <Image width={1024} height={666} src={product.gallery_1} className={style.image_12} alt={`Producto ${product.id}`} />}
+                                        </div>
+                                    </div>
+                                    <div
+                                        id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92c-36c2eb42"]}
+                                        className={`${style.image_case_01} ${style.space_margin}`}
+                                    >
+                                        <div className={style.wrapper_case_image}>
+                                            {product.gallery_2 && <Image width={1024} height={666} src={product.gallery_2} className={style.image_12} alt={`Producto ${product.id}`} />}
+                                        </div>
+                                    </div>
+                                    <div
+                                        id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92f-36c2eb42"]}
+                                        className={`${style.image_case_01} ${style.no_margim}`}
+                                    >
+                                        <div className={style.wrapper_case_image}>
+                                            {product.gallery_1 && <Image width={1024} height={666} src={product.gallery_1} className={style.image_12} alt={`Producto ${product.id}`} />}
+                                        </div>
+                                    </div>
+                                    <div
+                                        id={style["w-node-_753707ee-6db6-0b96-5cab-6f876765700c-36c2eb42"]}
+                                        className={`${style.wrapper_subtitle} ${style.bg_color_cream} ${style.align_right_title}`}
+                                    >
+                                        <div className={`${style.heading_small} ${style.text_color_black} ${raleway.className}`}>
+                                            Uso
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div
-                                id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92c-36c2eb42"]}
-                                className={`${style.image_case_01} ${style.space_margin}`}
-                            >
-                                <div className={style.wrapper_case_image}>
-                                    <Image
-                                        src={about2}
-                                        alt=""
-                                        className={style.image_12}
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                id={style["w-node-_5d59707f-1ac7-4066-390a-e66f33cbb92f-36c2eb42"]}
-                                className={`${style.image_case_01} ${style.no_margim}`}
-                            >
-                                <div className={style.wrapper_case_image}>
-                                    <Image
-                                        src={manual_akuaklin}
-                                        alt=""
-                                        className={style.image_12}
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                id={style["w-node-_753707ee-6db6-0b96-5cab-6f876765700c-36c2eb42"]}
-                                className={`${style.wrapper_subtitle} ${style.bg_color_cream} ${style.align_right_title}`}
-                            >
-                                <div className={`${style.heading_small} ${style.text_color_black} ${raleway.className}`}>
-                                    Uso
-                                </div>
-                            </div>
-                        </div>
+
+                            </>
+                        ) : (
+                            <></>
+                        )}
                     </div>
                 </section>
                 {/* Content */}
-
-
 
 
             </main>

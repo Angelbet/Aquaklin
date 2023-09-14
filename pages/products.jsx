@@ -356,7 +356,7 @@ function Products() {
                                         Productos
                                     </div>
                                 </div>
-                                <div ref={title_product} className={`${style.hero_title} ${raleway_4.className}`}>
+                                <div ref={title_product} className={`${style.hero_title} ${raleway.className}`}>
                                     <h1 className={style.heading_xlarge}>
                                         Nuestros Productos
                                     </h1>
@@ -367,9 +367,9 @@ function Products() {
                                 className={style.hero_text}
                             >
                                 <div ref={text_description} className={`${style.heading_medium} ${style.text_color_grey} ${raleway_4.className}`}>
-                                    AquaKlin es una empresa comprometida con la calidad y la seguridad de sus
-                                    productos. Nuestros productos son altamente eficaces y seguros,
-                                    y no requieren ningún equipo especial.
+                                    Aquaklin es una empresa comprometida con la calidad de sus
+                                    productos. Nuestros productos son altamente eficaces
+                                    y no requieren ningún equipo especial para su uso.
                                 </div>
                             </div>
 
@@ -397,7 +397,7 @@ function Products() {
                     <div className={style.container_catalog}>
                         <div ref={catalog_title} className={`${style.max_w_width} ${raleway.className}`}>
                             <h3 className={style.title_3}>
-                                El agua es vida, y AquaKlin es la clave para tener agua limpia y segura.
+                                El agua es vida, y Aquaklin es la clave para tener agua limpia y segura.
                             </h3>
                         </div>
 

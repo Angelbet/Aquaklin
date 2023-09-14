@@ -5,12 +5,16 @@ import Image from 'next/image'
 // Styles
 import style from '../styles/Home.module.scss'
 
+// Icons
+import { UilInstagram } from '@iconscout/react-unicons'
+import { UilWhatsapp } from '@iconscout/react-unicons'
+
 // Images
 import home_1 from '../public/assets/Home/home_1.jpg'
 import product_1 from '../public/assets/Home/Products/product_1.jpg'
 import logo_white from '../public/assets/l0go_white.png'
 
-import p1 from '../public/assets/Home/Products/p1.jpg'
+import product1 from '../public/assets/Home/Products/product1.jpg'
 import p2 from '../public/assets/Home/Products/p2.jpg'
 import p3 from '../public/assets/Home/Products/p3.jpg'
 
@@ -61,6 +65,8 @@ const raleway_3 = Raleway({
 })
 
 function Home() {
+
+
 
     const textRef = createRef(null);
     const absoluteTextRef = createRef(null);
@@ -226,9 +232,9 @@ function Home() {
                     scrollTrigger: {
                         trigger: containerRef.current,
                         pin: true,
-                        scrub: 1,
+                        scrub: 3,
                         end: "50%",
-                        markers: true,
+                        // markers: true,
                     },
                 });
                 timeline.to(containerRef.current, {
@@ -337,8 +343,6 @@ function Home() {
 
 
 
-
-
     const marqueeRef = createRef(null);
     const marqueelef = createRef(null);
 
@@ -356,7 +360,6 @@ function Home() {
             ease: "none",
         });
     }, []);
-
 
 
 
@@ -381,36 +384,25 @@ function Home() {
                         Email
                     </a>
                     <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.instagram.com/aquaklin.ve/"
                         target="_blank"
-                        className="social-icon-link w-inline-block"
+                        className={`${style.social_icon_link} ${style.w_inline_block}`}
                     >
-                        <img
-                            src="https://uploads-ssl.webflow.com/64a83068053f7ee30972da07/64a8356daeba06f43c5c81ef_in.svg"
-                            loading="lazy"
-                            alt=""
+                        <UilInstagram
+                            width={45}
+                            height={46}
+                            className={style.socials_img}
                         />
                     </a>
                     <a
-                        href="https://twitter.com/"
+                        href="https://wa.me/+584121331350"
                         target="_blank"
-                        className="social-icon-link w-inline-block"
+                        className={`${style.social_icon_link} ${style.w_inline_block}`}
                     >
-                        <img
-                            src="https://uploads-ssl.webflow.com/64a83068053f7ee30972da07/64a8356daeba06f43c5c81ee_Twitter.svg"
-                            loading="lazy"
-                            alt=""
-                        />
-                    </a>
-                    <a
-                        href="https://www.instagram.com/"
-                        target="_blank"
-                        className="social-icon-link w-inline-block"
-                    >
-                        <img
-                            src="https://uploads-ssl.webflow.com/64a83068053f7ee30972da07/64a83573bbfcce9f0796f966_ig.svg"
-                            loading="lazy"
-                            alt=""
+                        <UilWhatsapp
+                            width={45}
+                            height={46}
+                            className={style.socials_img}
                         />
                     </a>
                 </div>
@@ -493,12 +485,12 @@ function Home() {
                                                 <h1
                                                     className={`${style.heading_medium} heading-medium`}
                                                 >
-                                                    Clarificación del Agua
+                                                    Clarificador de Agua
                                                 </h1>
                                                 <h1
                                                     className={`${style.heading_medium} heading-medium`}
                                                 >
-                                                    Certificado y Seguro
+                                                    Detectores de Fuga de Agua
                                                 </h1>
                                                 <h1
                                                     className={`${style.heading_medium} heading-medium`}
@@ -510,6 +502,7 @@ function Home() {
                                     </div>
 
                                     <h2 className={`${style.heading_xlarge} ${style.shadow} ${raleway_3.className}`}>
+                                        {/* {t('home.content')} */}
                                         Agua Limpia
                                     </h2>
 
@@ -525,41 +518,31 @@ function Home() {
                                             <Image
                                                 src={home_1}
                                                 width={548}
-                                                alt="John Winter Image"
+                                                alt="Drink Water"
                                                 className={style.about_image}
                                             />
                                         </div>
                                         <ul className={style.list}>
                                             <li className={style.social_link}>
                                                 <a
-                                                    href="https://www.linkedin.com/"
+                                                    href="https://www.instagram.com/aquaklin.ve/"
                                                     target="_blank"
                                                     className={style.w_inline_block}
                                                 >
-                                                    <img
-                                                        src="https://uploads-ssl.webflow.com/64a83068053f7ee30972da07/64a8356daeba06f43c5c81ef_in.svg"
-                                                        loading="lazy"
-                                                        alt=""
+                                                    <UilInstagram
+                                                        width={45}
+                                                        height={46}
                                                         className={style.socials_img}
                                                     />
                                                 </a>
                                             </li>
                                             <li className={style.social_link}>
-                                                <a href="https://www.linkedin.com/" className={style.w_inline_block}>
-                                                    <img
-                                                        src="https://uploads-ssl.webflow.com/64a83068053f7ee30972da07/64a8356daeba06f43c5c81ee_Twitter.svg"
-                                                        loading="lazy"
-                                                        alt=""
-                                                        className={style.socials_img}
-                                                    />
-                                                </a>
-                                            </li>
-                                            <li className={`${style.social_link} ${style.last_link}`}>
-                                                <a href="https://www.linkedin.com/" className={style.w_inline_block}>
-                                                    <img
-                                                        src="https://uploads-ssl.webflow.com/64a83068053f7ee30972da07/64a83573bbfcce9f0796f966_ig.svg"
-                                                        loading="lazy"
-                                                        alt=""
+                                                <a href="https://wa.me/+584121331350"
+                                                    target="_blank"
+                                                    className={style.w_inline_block}>
+                                                    <UilWhatsapp
+                                                        width={45}
+                                                        height={46}
                                                         className={style.socials_img}
                                                     />
                                                 </a>
@@ -656,7 +639,7 @@ function Home() {
                             className={`${style.rows} ${style.gap_4x}`}
                         >
                             <div className={raleway.className} id={style["w-node-f46328a8-2297-67c1-6672-a5e3cb6e33b8-6d48d9a5"]}>
-                                Aquaklin es una empresa comprometida con la calidad del agua. Contamos con soluciones para la clarificación de agua. Sistemas para el uso de aguas de lluvias, equipos para la detección acustica de aguas
+                                Aquaklin es una empresa comprometida con la calidad del agua. Contamos con soluciones para la clarificación de agua. Sistemas para el uso de aguas de lluvias, equipos para la detección acústica de fugas de aguas.
 
                             </div>
                         </div>
@@ -943,7 +926,7 @@ function Home() {
                                                         <div className={`${style.project_image_wrapper}`}>
                                                             <Image
                                                                 alt="Producto 1"
-                                                                src={p1}
+                                                                src={product1}
                                                                 className={style.project_image}
                                                             />
                                                         </div>
@@ -1042,9 +1025,9 @@ function Home() {
                                     </div>
                                     {/* S2 */}
 
-
+                                    {/* https://design-creation.webflow.io */}
                                     {/* S3 */}
-                                    <div className={`section_products ${style.all_projects_container}`}>
+                                    {/* <div className={`section_products ${style.all_projects_container}`}>
                                         <div className={`${style.project_context} ${style.all_projects}`}>
                                             <div className={style.project_type} />
                                             <div className={`${style.big_text} ${style.wider} ${style.no_pointer_events} ${raleway_2.className}`}>
@@ -1423,7 +1406,7 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* S3 */}
                                 </div>
                             </div>
@@ -1434,16 +1417,9 @@ function Home() {
 
 
 
-
-
-
-
-
-
-
-
+                {/* https://aestheria.webflow.io/#What-Do-You-Need */}
                 {/* === Videos === */}
-                <section className={`${style.content_section} ${style.visible}`}>
+                {/* <section className={`${style.content_section} ${style.visible}`}>
                     <div className={`${style.content_wrapper} ${style.w_container}`}>
                         <div>
                             <div className={`${style.absolute_heading} ${style.medium} ${raleway.className}`}>
@@ -1511,7 +1487,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* === Products === */}
 
 

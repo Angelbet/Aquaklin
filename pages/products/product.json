@@ -6,24 +6,25 @@
         "category_link_color": "aquaklin",
         "title_product": "Sulfato de Aluminio",
         "short_description": [
-            "Aquaklin ofrece Sulfato de Aluminio como el quimico utilizado, para clarificar el agua de piscinas y tanques. Los productos de Aquaklin son fáciles de usar y no requieren ningún equipo especial."
+            "Aquaklin ofrece Sulfato de Aluminio como el quimico utilizado para clarificar el agua de reservorios de agua y piscinas. Los productos de Aquaklin son fáciles de usar y no requieren ningún equipo especial para su uso."
         ],
         "image_product": "p1",
         "title_description": "Sulfato de Aluminio",
         "description": [
-            "El Sulfato de Aluminio, es una sal fácilmente soluble en agua, pueden prepararse soluciones con concentraciones de sulfato sólido hasta de 55%. Para el tratamiento de agua se sugiere que la concentración no sea superior a 5% de sulfato de aluminio sólido, con el fin de lograr una buena velocidad de disolución.",
+            "El Sulfato de Aluminio es una sal fácilmente soluble en agua, pueden prepararse soluciones con concentraciones de sulfato sólido hasta de 55%. Para el tratamiento de agua se sugiere que la concentración no sea superior a 5% de sulfato de aluminio sólido, con el fin de lograr una buena velocidad de disolución.",
             "El tiempo de residencia en el tanque donde se disuelve el material no debe ser inferior a 2,5 min. La dósis máxima es de 150 mg/L y el aluminio residual en el agua potable no debe exceder 0,2 mg/L."
         ],
         "distributed": "Distribuido y Certificado por",
         "certificate": "/assets/Home/Products/certificado-NSF.png",
         "awwa": "/assets/Home/Products/AWWA.png",
         "characteristics": [
-            "Guía del usuario rápida y fiable a través de los diferentes casos de aplicación.",
-            "Trabajo cómodo y sin cables mediante componentes inalámbricos.",
-            "Localización de fugas rápida y precisa a través de filtros inteligentes.",
-            "Reproductor de audio integrado para la comparación directa e in situ de sonidos de fugas.",
-            "Estanco al agua (IP67)."
-        ]
+            "Elimina las impurezas del agua, como los sedimentos.",
+            "Clarifica el agua, es decir, elimina las partículas en suspensión que hacen que el agua sea turbia.",
+            "Es fácil de usar y no requiere ningún equipo especial.",
+            "Es seguro y está certificado por las autoridades sanitarias competentes."
+        ],
+        "gallery_1": "/assets/Home/Products/uso_aquaklin.jpeg",
+        "gallery_2": "/assets/Home/Products/product1.jpg"
     },
     {
         "id": "aquaphon-a-200",
@@ -42,8 +43,7 @@
             "Guía del usuario rápida y fiable a través de los diferentes casos de aplicación.",
             "Trabajo cómodo y sin cables mediante componentes inalámbricos.",
             "Localización de fugas rápida y precisa a través de filtros inteligentes.",
-            "Reproductor de audio integrado para la comparación directa e in situ de sonidos de fugas.",
-            "Estanco al agua (IP67)."
+            "Reproductor de audio integrado para la comparación directa e in situ de sonidos de fugas."
         ]
     },
     {
@@ -184,15 +184,14 @@
         "image_product": "p9",
         "title_description": "Bacteria In Water Individual Test",
         "description": [
-            "El agua contaminada con bacterias como la E. coli puede causar enfermedades graves, incluso la muerte. Analizar periódicamente el agua potable en busca de bacterias es una excelente forma de garantizar la buena salud de su familia.",
-            "Hacer testeos regularmente al agua es la vía de asegurar la salud de la familia.",
+            "El agua contaminada con bacterias como la E Coli puede causar enfermedades graves, incluso la muerte. Analizar periódicamente el agua potable en busca de bacterias es una excelente forma de garantizar la buena salud de su familia.",
             "Después de recibir los resultados de las pruebas, la pregunta # 1 que se hace es: \"¿Qué hago ahora?\" Safe Home ofrece una amplia gama de productos. Póngase en contacto con nosotros en cualquier momento. Será un placer ayudarle."
         ],
         "distributed": "Distribuido por",
         "characteristics": [
             "Realice el análisis en su propia casa y a su conveniencia.",
             "Cada envase contiene 1 vial para analizar la presencia de bacterias en el agua potable.",
-            "Puede detectar 50 especies diferentes de bacterias coliformes (incluida E. coli).",
+            "Puede detectar 50 especies diferentes de bacterias coliformes (incluida E Coli).",
             "Detecta bacterias hasta 1 unidad formadora de colonias (la más baja posible).",
             "Resultados en tan sólo 24 horas (la velocidad de los resultados puede variar).",
             "Seguro y fácil de usar.",
@@ -201,25 +200,25 @@
     },
     {
         "id": "high-quality-drinking-water-test-kit",
-        "title": "Sistema Nautilus",
-        "category_link": "Detección de fugas en tuberías",
-        "category_link_color": "aganova",
-        "title_product": "Sistema Nautilus",
+        "title": "Bacteria In Water Individual Test (Better Price)",
+        "category_link": "Kit de prueba de bacterias en agua",
+        "category_link_color": "safehome",
+        "title_product": "Bacteria In Water Individual Test (Better Price)",
         "short_description": [
             "El sistema nautilus es una tecnología in-line, sin cable y de flotabilidad neutra para detección de fugas en tuberías de gran diametro."
         ],
         "image_product": "p10",
-        "title_description": "Sistema Nautilus",
+        "title_description": "Bacteria In Water Individual Test (Better Price)",
         "description": [
             "Contiene un conjunto de recipientes de prueba de calidad del agua para permitirle probar su agua potable para 50 contaminantes (6 en orgánicos, 12 propiedades físicas y 32 metales tóxicos). Seguro y fácil de usar.",
             "Las pruebas de laboratorio certificadas por la EPA de Safe Home proporcionan la precisión necesaria para confirmar si su agua supera los límites de contaminación máxima federales establecidos por la EPA.",
-            "Para el consumo humano. Incluye una bonificación de bacterias seguras en la prueba de agua. Realice esta prueba usted mismo con su propia comodidad y en la comodidad de su propia casa (Total Coliform y E. coli). El mejor valor en precisión y fiabilidad para la seguridad del agua potable de tu familia."
+            "Para el consumo humano. Incluye una bonificación de bacterias seguras en la prueba de agua. Realice esta prueba usted mismo con su propia comodidad y en la comodidad de su propia casa (Total Coliform y E coli). El mejor valor en precisión y fiabilidad para la seguridad del agua potable de tu familia."
         ],
         "distributed": "Distribuido por",
         "characteristics": [
             "Realice el análisis en su propia casa y a su conveniencia.",
             "Cada envase contiene 1 vial para analizar la presencia de bacterias en el agua potable.",
-            "Puede detectar 50 especies diferentes de bacterias coliformes (incluida E. coli).",
+            "Puede detectar 50 especies diferentes de bacterias coliformes (incluida E coli).",
             "Detecta bacterias hasta 1 unidad formadora de colonias (la más baja posible).",
             "Resultados en tan sólo 24 horas (la velocidad de los resultados puede variar).",
             "Seguro y fácil de usar.",
@@ -243,12 +242,12 @@
         ],
         "distributed": "Distribuido por",
         "characteristics": [
-            "Rapidez: Puede revisar una media de 3 kilómwreos por hora y más de 35 kilómetros en una sola inserción.",
-            "Eficiencia: Dado que la esfera navega libremente empujada por el caudal, el sistema evita los obstáculos de acumulación de sedimentos, arena , válvulas, etc.",
+            "Rapidez: Puede revisar una media de 3 kilómetros por hora y más de 35 kilómetros en una sola inserción.",
+            "Eficiencia: Dado que la esfera navega libremente empujada por el caudal, el sistema evita los obstáculos de acumulación de sedimentos, arena, etc.",
             "Precisión: Con el uso de sincronizadores, el margen de error se reduce al minimo.",
-            "Efectividad: Puede detectar fugas deesde 0,01 litros por segundo.",
+            "Efectividad: Puede detectar fugas desde 0,01 litros por segundo.",
             "Eficacia: Puede aplicarse en todo tipo de materiales, sin afectarle la profundidad en la que se encuentra la tubería.",
-            "Rentabilidad: Es el sistema más asequible para la detección de fugas de agua en tuberías de gran diámetro. A mayor número dee kilómetro en una inspección o contrato, menor precio por kilómetro."
+            "Rentabilidad: Es el sistema más asequible para la detección de fugas de agua en tuberías de gran diámetro. A mayor número de kilómetro en una inspección o contrato, menor precio por kilómetro."
         ]
     }
 ]
