@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Aquiaklin Online | Próximamente</title>
+        <title>Aquiaklin Online | 404</title>
         <meta name="description" content="Página en construcción Aquaklin" />
       </Head>
 
@@ -64,7 +64,7 @@ export default function Home() {
               <span className={style.image_span}>
                 <br />
               </span>
-              Próximamente.
+              404.
             </h1>
           </div>
           <div

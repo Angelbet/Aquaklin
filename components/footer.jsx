@@ -103,7 +103,7 @@ const Footer = () => {
                                 </div>
                                 <div className={`${style.footer_links_wrap} ${raleway_2.className}`}>
                                     <div className={style.footer_link_column}>
-                                        <Link href="/home" className={style.footer_link}>
+                                        <Link href="/" className={style.footer_link}>
                                             Inicio
                                         </Link>
                                         <Link

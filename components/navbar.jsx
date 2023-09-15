@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { createRef, useEffect, useState } from 'react'
 
 // Styles
 import style from '../styles/Navbar.module.scss'
@@ -29,7 +29,7 @@ const raleway_2 = Raleway({
 
 export default function Navbar() {
 
-    const [isOpen, setIsOpen] = createRef(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         if (isOpen) {
@@ -54,7 +54,7 @@ export default function Navbar() {
                 className={`${style.navigation_mbl} ${style.w_nav}`}
             >
                 <div className={`${style.container} ${style.mbl_nav} ${style.w_container}`}>
-                    <Link href="/home" className={style.w_nav_brand}>
+                    <Link href="/" className={style.w_nav_brand}>
                         <Image
                             src={logo}
 
@@ -87,7 +87,7 @@ export default function Navbar() {
                                                 className={`${style.dropdown_mbl} ${style.w_dropdown}`}
                                             >
                                                 <Link
-                                                    href="/home"
+                                                    href="/"
                                                     className={`${style.nav_link_mbl} ${style.w_dropdown_toggle}`}
                                                 >
                                                     <div
@@ -186,7 +186,7 @@ export default function Navbar() {
                     <ul className={`${style.nav_grid} ${style.w_list_unstyled}`}>
                         <li>
                             <div className={`${style.dropdown} ${style.w_dropdown}`}>
-                                <Link href="/home" className={`${style.nav_link} ${style.w_dropdown_toggle}`} id="w-dropdown-toggle-6">
+                                <Link href="/" className={`${style.nav_link} ${style.w_dropdown_toggle}`} id="w-dropdown-toggle-6">
                                     <div className={raleway_2.className}>Inicio</div>
                                 </Link>
                             </div>
